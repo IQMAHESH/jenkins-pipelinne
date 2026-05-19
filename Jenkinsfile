@@ -5,7 +5,8 @@ pipeline {
 
         stage('Clone') {
             steps {
-                git 'https://github.com/IQMAHESH/jenkins-pipelinne.git'
+                git branch: 'main',
+                url: 'https://github.com/IQMAHESH/jenkins-pipelinne.git'
             }
         }
 
